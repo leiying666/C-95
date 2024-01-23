@@ -1,0 +1,25 @@
+#include<stdio.h>
+
+int main()
+{
+    char a[100];
+    gets(a);
+    int i = 0;
+    while (a[i] != '\0')
+    {
+        if (a[i] != ' ')
+        {
+            if (a[i] == 'z')
+            {
+                a[i] = 'a';
+            }
+            else
+            {
+                a[i] += 1;
+            }
+        }
+        i++;
+    }
+    puts(a);
+    return 0;
+}
